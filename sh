@@ -69,5 +69,5 @@ else
 pip2 install bs4
 fi
 
-python2 srfrza
-python srfrza
+python2 r
+python r
