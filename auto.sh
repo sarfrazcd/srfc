@@ -21,30 +21,30 @@ fi
 if pip show requests | grep Version >/dev/null 2>&1; then
  echo 'requests already installed'
 else
-pip install requests
-pip2 install requests
+pip install requests -y
+pip2 install requests -y
 fi
 
 if pip show mechanize | grep Version >/dev/null 2>&1; then
  echo 'mechanize already installed'
 else
-pip install mechanize
-pip2 install mechanize
+pip install mechanize -y
+pip2 install mechanize -y
 fi
 
 
 if command -v lolcat >/dev/null 2>&1; then
  echo 'lolcat already installed'
 else
-pip install lolcat
-pip2 install lolcat
+pip install lolcat -y
+pip2 install lolcat -y
 fi
 
 if pip show bs4 | grep Version >/dev/null 2>&1; then
  echo 'bs4 already installed'
 else
-pip install bs4
-pip2 install bs4
+pip install bs4 -y
+pip2 install bs4 -y
 fi
 
 
