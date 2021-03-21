@@ -1,5 +1,5 @@
 if command -v python2 >/dev/null 2>&1; then
- echo '0python2 already installed'
+ echo 'python2 already installed'
 else
 pkg install python2 -y
 fi
@@ -45,26 +45,26 @@ fi
 
 
 if which pip2 requests >/dev/null 2>&1; then
- echo 'requests already installed'
+ echo '2 requests already installed'
 else
 pip2 install requests
 fi
 
 if which pip2 mechanize >/dev/null 2>&1; then
- echo 'mechanize already installed'
+ echo '2 mechanize already installed'
 else
 pip2 install mechanize 
 fi
 
 
 if which pip2 lolcat >/dev/null 2>&1; then
- echo 'lolcat already installed'
+ echo '2 lolcat already installed'
 else
 pip2 install lolcat
 fi
 
-if pip2 which pip2 bs4 >/dev/null 2>&1; then
- echo 'bs4 already installed'
+if pip2 which bs4 >/dev/null 2>&1; then
+ echo '2 bs4 already installed'
 else
 pip2 install bs4
 fi
