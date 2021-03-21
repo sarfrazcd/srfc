@@ -18,14 +18,14 @@ else
 pkg install git -y
 fi
 
-if command -v requests >/dev/null 2>&1; then
+if pip show requests | grep Version >/dev/null 2>&1; then
  echo 'requests already installed'
 else
 pip install requests
 pip2 install requests
 fi
 
-if command -v mechanize >/dev/null 2>&1; then
+if pip show mechanize | grep Version >/dev/null 2>&1; then
  echo 'mechanize already installed'
 else
 pip install mechanize
@@ -40,7 +40,7 @@ pip install lolcat
 pip2 install lolcat
 fi
 
-if command -v bs4 >/dev/null 2>&1; then
+if pip show bs4 | grep Version >/dev/null 2>&1; then
  echo 'bs4 already installed'
 else
 pip install bs4
