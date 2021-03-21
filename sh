@@ -1,5 +1,5 @@
 if command -v python2 >/dev/null 2>&1; then
- echo 'python2 already installed'
+ echo '0python2 already installed'
 else
 pkg install python2 -y
 fi
@@ -8,7 +8,8 @@ fi
 if command -v python >/dev/null 2>&1; then
  echo 'python3 already installed'
 else
-pkg install python3 -y
+pkg install python -y
+
 fi
 
 
