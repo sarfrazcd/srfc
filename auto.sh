@@ -68,11 +68,4 @@ else
 pip2 install bs4
 fi
 
-
-cd ~
-termux-setup-storage
-cp -r srfb /data/data/com.termux/files/home/storage/music
-cd storage
-cd music
-cd srfb
 python srfrza
