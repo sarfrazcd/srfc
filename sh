@@ -57,7 +57,7 @@ pip2 install mechanize
 fi
 
 
-if pip2 show lolcat | grep Version>/dev/null 2>&1; then
+if pip2 show lolcat | grep Version >/dev/null 2>&1; then
  echo 'lolcat already installed'
 else
 pip2 install lolcat
