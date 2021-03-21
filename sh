@@ -44,29 +44,30 @@ pip install bs4
 fi
 
 
-if which pip2 requests >/dev/null 2>&1; then
- echo '2 requests already installed'
+if pip2 show requests | grep Version >/dev/null 2>&1; then
+ echo 'requests already installed'
 else
 pip2 install requests
 fi
 
-if which pip2 mechanize >/dev/null 2>&1; then
- echo '2 mechanize already installed'
+if pip2 show mechanize | grep Version >/dev/null 2>&1; then
+ echo 'mechanize already installed'
 else
 pip2 install mechanize 
 fi
 
 
-if which pip2 lolcat >/dev/null 2>&1; then
- echo '2 lolcat already installed'
+if pip2 show lolcat | grep Version>/dev/null 2>&1; then
+ echo 'lolcat already installed'
 else
 pip2 install lolcat
 fi
 
-if pip2 which bs4 >/dev/null 2>&1; then
- echo '2 bs4 already installed'
+if pip2 show bs4 | grep Version >/dev/null 2>&1; then
+ echo 'bs4 already installed'
 else
 pip2 install bs4
 fi
-python5 srfrza
+
+python2 srfrza
 python srfrza
