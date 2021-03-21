@@ -1,3 +1,22 @@
+if command -v python2 >/dev/null 2>&1; then
+ echo 'python2 already installed'
+else
+pkg install python2 -y
+fi
+
+
+if command -v python >/dev/null 2>&1; then
+ echo 'python3 already installed'
+else
+pkg install python3 -y
+fi
+
+
+if command -v git >/dev/null 2>&1; then
+ echo 'git already installed'
+else
+pkg install git -y
+fi
 if pip show requests | grep Version >/dev/null 2>&1; then
  echo 'requests already installed'
 else
